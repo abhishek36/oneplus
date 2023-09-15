@@ -917,10 +917,6 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-list ul li:{
-  content: '3';
-}
-
 
 @media (max-width:768px){
   nav ul{
