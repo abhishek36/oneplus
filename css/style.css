@@ -353,11 +353,6 @@ hr {
   gap: 32px;
 }
 
-.top-p-container ul li::marker{
-  content: '🚒';
-  font-size: 18px;
-  font-weight: 500;
-}
 
 .top-p-container ul li:first-child {
   border-bottom: 1px solid red;
