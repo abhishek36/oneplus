@@ -52,7 +52,108 @@ nav ul {
 
 nav ul li {
   font-size: 14px;
+  transition: 0.4s;
+  cursor: pointer;
 }
+
+nav ul li:hover{
+  color: #f50514;
+}
+
+nav ul li:hover .dropdown{
+  display: block;
+  transition: all 0.5s ease-in;
+}
+
+nav ul li .dropdown{
+  position: absolute;
+  background: white;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 63px;
+}
+
+.dropdown .dropdown-boxes{
+  display: flex;
+  border-block: 1px solid #dadada;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.dropdown-boxes .dropdown-box{
+  width: 14%;
+  /* height: 217px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-box img{
+  width: 100%;
+  transition: 0.4s;
+}
+
+.dropdown-box img:hover{
+  transform: scale(1.1);
+}
+
+.dropdown-box h4{
+  font-size: 14px;
+  color: #000000;
+  opacity: 75.0%;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dropdown-box span{
+  color: #f50514;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.dropdown-last{
+  padding: 12px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-last .dropdown-left{
+  display: flex;
+  gap: 15px;
+}
+
+.dropdown-left span{
+  font-size: 16px;
+  color: #000000;
+  opacity: 95.0%;
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown-left span i{
+  font-size: 12px;
+}
+
+.dropdown-last .dropdown-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdown-right button{
+  width: 200px;
+  height: 40px;
+  padding: 0px 16px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid #dadada;
+}
+
+
 
 nav .right {
   gap: 22px;
